@@ -42,6 +42,11 @@ with mp.solutions.pose.Pose(min_detection_confidence=0.5, min_tracking_confidenc
             print("Failed to grab frame")
             break
         # Convert BGR to RGB for MediaPipe
+        #The early versions of OpenCV were designed to work 
+        # with the Windows operating system, which used BGR as the default pixel format for representing images.
+        # Conversion:  When working with images in OpenCV, we often need to convert between BGR and RGB formats, 
+        # especially if we're using libraries (like MediaPipe) that expect RGB input. 
+
         image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         image.flags.writeable = False  # Disable frame writeability to improve performance
       
