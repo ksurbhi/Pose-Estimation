@@ -7,7 +7,7 @@ This project uses OpenCV and Mediapipe to detect body poses in real-time via a w
 3.) Curl Counter: Counts the number of complete curls performed based on the calculated angles.
 4.) Visual Feedback: Displays the current angle, curl count, and stage (up/down) on the video feed.
 # Prerequisites
-Python 3.8
-OpenCV
-Mediapipe
-NumPy
+Python 3.8,
+  OpenCV,
+  Mediapipe,
+  NumPy,
